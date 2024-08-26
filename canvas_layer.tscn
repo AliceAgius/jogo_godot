@@ -1,0 +1,222 @@
+[gd_scene load_steps=30 format=3 uid="uid://bcvr3vcnrjdek"]
+
+[ext_resource type="Script" path="res://CanvasLayer.gd" id="1_nyicc"]
+[ext_resource type="Script" path="res://Node2D.gd" id="2_1rrpy"]
+[ext_resource type="Texture2D" uid="uid://da8ule1dgyge7" path="res://Assets_aula1/Character/Coletavel/Collected.png" id="3_7dynv"]
+[ext_resource type="Texture2D" uid="uid://dqca5xnlvg8ia" path="res://Assets_aula1/Character/Coletavel/MelonBom.png" id="4_yctm7"]
+[ext_resource type="Script" path="res://AnimatedSprite2D.gd" id="5_wwrgv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_on02i"]
+atlas = ExtResource("3_7dynv")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxq6q"]
+atlas = ExtResource("3_7dynv")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqht4"]
+atlas = ExtResource("3_7dynv")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47i25"]
+atlas = ExtResource("3_7dynv")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ohv2"]
+atlas = ExtResource("3_7dynv")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgvkv"]
+atlas = ExtResource("3_7dynv")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4c02"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_22lsj"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7628v"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qke7o"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgfcn"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2jpo"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wayka"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7u3xo"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ealv"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u62iv"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sk8tr"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkq64"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gu44"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fa1fk"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lnyse"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0fwt"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1nywc"]
+atlas = ExtResource("4_yctm7")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6ldim"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on02i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxq6q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqht4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47i25")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ohv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgvkv")
+}],
+"loop": false,
+"name": &"coletado",
+"speed": 14.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4c02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_22lsj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7628v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qke7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgfcn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2jpo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wayka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7u3xo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ealv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u62iv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sk8tr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkq64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gu44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fa1fk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lnyse")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0fwt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1nywc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 14.0
+}]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+layer = 2
+script = ExtResource("1_nyicc")
+
+[node name="control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 439.0
+offset_top = 14.0
+offset_right = 439.0
+offset_bottom = 14.0
+scale = Vector2(2, 2)
+script = ExtResource("2_1rrpy")
+
+[node name="timer_count" type="Label" parent="control"]
+layout_mode = 0
+offset_left = -212.5
+offset_right = -172.5
+offset_bottom = 23.0
+text = "99"
+
+[node name="points" type="Label" parent="control"]
+layout_mode = 0
+offset_left = -46.0
+offset_top = 5.0
+offset_right = -6.0
+offset_bottom = 28.0
+text = "99"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="control"]
+position = Vector2(-5, 11)
+scale = Vector2(2.375, 2.40625)
+sprite_frames = SubResource("SpriteFrames_6ldim")
+autoplay = "default"
+script = ExtResource("5_wwrgv")
+
+[node name="Timer_cont" type="Timer" parent="control"]
+autostart = true
+
+[connection signal="timeout" from="control/Timer_cont" to="control" method="_on_timer_cont_timeout"]

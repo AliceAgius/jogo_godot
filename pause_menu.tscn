@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://025f2d21vne8"]
+
+[ext_resource type="Script" path="res://pause_menu.gd" id="1_bvowa"]
+
+[node name="Pause_Menu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_bvowa")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 410.0
+offset_top = 135.0
+offset_right = 496.0
+offset_bottom = 238.0
+scale = Vector2(3.17771, 3.06945)
+
+[node name="quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "SAIR"
+
+[node name="reiniciar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "REINICIAR"
+
+[node name="pause" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "VOLTAR"
+
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/reiniciar" to="." method="_on_reiniciar_pressed"]
+[connection signal="pressed" from="VBoxContainer/pause" to="." method="_on_pause_pressed"]
